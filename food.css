@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+html{
+    font-family: 'Nunito';
+    font-family: 'Playfair Display', serif;
+    font-family: 'Zilla Slab', serif;
+    font-size: 12px;
+    font-weight: 400;
+    background-color: #f4c430;
+    background: url(./final.jpg)  no-repeat center center fixed;
+    background-size:cover;
+}
+section{
+    min-width: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    background-color: rgb(26, 26, 27);
+    background: linear-gradient(90deg, #ff0000, #ff4000, #ff5e00, #ff7500, #ff8a00, #ff9d04, #ffaf20, #ffc035);
+    background: url("https://www.icolorpalette.com/download/solidcolorimage/ffa600_solid_color_background_icolorpalette.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    /* background: #abb8c3; */
+    background-color: #f4c430;
+    
+}
+
+.container{
+    width: 90%;
+    height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  padding: 10px;
+  font-size: 23px;
+  font-weight: bold;
+    color:white;
+    padding: 2px;
+    margin: 4px;
+    text-shadow: 0px -2px 10px rgba(77, 185, 177, 0.97);
+    
+}
+.brand{
+    text-align: center;
+    font-size: 4rem;
+    /* color: whitesmoke; */
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+form{
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: rgb(223, 223, 223);
+    border-radius: 80px;
+}
+
+form input{
+    width: 90%;
+    background-color: transparent;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    display: inline-block;
+}
+
+form ion-icon{
+    width: 9%;
+    font-size: 3rem;
+    margin: -9px;
+    color: red;
+    cursor: pointer;
+}
+
+.search-result{
+    margin-top: 50px;
+   width: 100%;
+   display: grid;
+   grid-gap: 25px;
+   grid-template: auto/repeat(auto-fit,minmax(300px,1fr)) ;
+}
+.item{
+    width: 100%;
+    border-radius: 10px;
+    background-color: red;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.item img{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.item .flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item .title{
+    color: aliceblue;
+    margin: 20px 10px 0 0;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.view-btn{
+    text-decoration: none;
+    text-align: center;
+    width: 130px;
+    padding: 10px 0;
+    background-color: #FF0800;
+    border: 1px solid yellow;
+    color: whitesmoke;
+    font-size: 1.4rem;
+    margin-top: 20px;
+    align-self: flex-start;
+}
+
+.item-data{
+    color: whitesmoke;
+    display: block;
+    margin-top: 10px;
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+    line-height: 2rem;
+}
+
+
+.container.initial .brand {
+    font-size: 7rem;
+  }
+  .container.initial form {
+    max-width: 800px;
+  }
+  .container.initial form input {
+    padding: 20px;
+    font-size: 3rem;
+  }
+
+
+@media (max-width: 768px) {
+    .search-result {
+      grid-gap: 10px;
+    }
+    .container.initial .brand {
+      font-size: 4rem;
+    }
+    .container.initial form {
+      max-width: 500px;
+    }
+    .container.initial form input {
+      padding: 10px;
+      font-size: 2rem;
+    }
+}
+  
